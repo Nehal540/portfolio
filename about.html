@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>About ,  Nehal Thakkar</title>
+  <meta name="description" content="A brief introduction to Nehal, an interaction designer based in Ahmedabad.">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./theme.css">
+  <link rel="stylesheet" href="./minimal.css">
+  <link rel="stylesheet" href="./about-gallery.css">
+</head>
+<body class="minimal-page about-page" id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav" aria-label="Primary"><a class="nav-brand nav-annotation" href="./index.html" aria-label="Home">A work in progress</a><nav aria-label="Main navigation"><a href="./index.html">Home</a><a href="./work.html">Work</a><a href="./about.html" aria-current="page">About</a><a href="./contact.html">Contact</a></nav></header>
+<main id="main" class="personal-world">
+  <section class="personal-gallery" aria-label="Nehal’s personal photo gallery" aria-roledescription="carousel">
+    <div class="gallery-stage" id="about-gallery"></div>
+    <p class="gallery-line" id="gallery-line" aria-live="polite"></p>
+    <div class="gallery-controls"><button type="button" id="gallery-prev" aria-label="Previous photo">Previous</button><div id="gallery-dots" aria-label="Choose a photo"></div><button type="button" id="gallery-next" aria-label="Next photo">Next</button></div>
+  </section>
+</main>
+<footer class="quiet-footer"><span>Nehal Thakkar</span><span>Interaction designer <span aria-hidden="true">/</span> © 2026</span></footer>
+<script src="./about-gallery.js"></script>
+</body>
+</html>

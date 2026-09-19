@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>Nehal Thakkar ,  Interaction Designer</title>
+  <meta name="description" content="Interaction design across digital interfaces, physical objects and immersive experiences.">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./theme.css">
+  <link rel="stylesheet" href="./minimal.css">
+</head>
+<body class="minimal-page home-page" id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav" aria-label="Primary"><a class="nav-brand nav-annotation" href="./index.html" aria-label="Home">A work in progress</a><nav aria-label="Main navigation"><a href="./index.html" aria-current="page">Home</a><a href="./work.html">Work</a><a href="./about.html">About</a><a href="./contact.html">Contact</a></nav></header>
+<main id="main" class="minimal-home">
+  <section class="kinetic-cover" aria-labelledby="hero-title">
+    <h1 id="hero-title" class="sr-only">Nehal ,  Interaction Designer</h1>
+    <div class="kinetic-stage identity-stage" id="kinetic-stage" role="group" aria-label="Discover the five sides of Nehal" aria-describedby="kinetic-caption">
+      <button class="kinetic-letter" type="button" data-identity="Research" data-description="Finding the question worth asking." aria-label="N: hover or focus to reveal Research" aria-pressed="false" aria-controls="identity-reveal"><span aria-hidden="true">N</span></button>
+      <button class="kinetic-letter" type="button" data-identity="UI/UX design" data-description="Making the next step feel clear." aria-label="e: hover or focus to reveal UI/UX design" aria-pressed="false" aria-controls="identity-reveal"><span aria-hidden="true">e</span></button>
+      <button class="kinetic-letter" type="button" data-identity="Immersive experiences" data-description="Exploring interaction beyond the screen." aria-label="h: hover or focus to reveal Immersive experiences" aria-pressed="false" aria-controls="identity-reveal"><span aria-hidden="true">h</span></button>
+      <button class="kinetic-letter" type="button" data-identity="Game design" data-description="Making room for curiosity and play." aria-label="a: hover or focus to reveal Game design" aria-pressed="false" aria-controls="identity-reveal"><span aria-hidden="true">a</span></button>
+      <button class="kinetic-letter" type="button" data-identity="Physical computing" data-description="Turning a physical gesture into a response." aria-label="l: hover or focus to reveal Physical computing" aria-pressed="false" aria-controls="identity-reveal"><span aria-hidden="true">l</span></button>
+    </div>
+    <p class="kinetic-caption" id="kinetic-caption">Hover over a letter to reveal a part of my practice.</p>
+    <div class="identity-reveal" id="identity-reveal" role="status" aria-live="polite" aria-atomic="true">
+      <p class="identity-title" id="identity-title"></p>
+      <p class="identity-description" id="identity-description"></p>
+    </div>
+    <p class="home-introduction">I’m Nehal, an Interaction Designer interested in what a design intends to communicate and how people actually experience, interpret and react to it. Through UI/UX, immersive experiences, games and physical computing, I explore these exchanges and learn from the unexpected moments that emerge between people and technology.</p>
+  </section>
+  <section class="home-projects" id="projects" aria-labelledby="projects-title">
+    <div class="projects-heading"><h2 id="projects-title">Projects <em>&amp; explorations.</em></h2><div class="carousel-controls"><button type="button" id="projects-prev" aria-label="Previous projects" aria-controls="project-track" disabled>←</button><button type="button" id="projects-next" aria-label="Next projects" aria-controls="project-track">→</button></div></div>
+    <div class="project-track" id="project-track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Projects and explorations">
+      <a class="project-slide" href="./flames-of-the-forgotten.html"><div class="slide-media"><img src="./assets/flames-workshop.webp" alt="Flames of the Forgotten Unity workshop environment" width="1382" height="732" loading="lazy"></div><p class="slide-category">Immersive experience / Unity</p><div class="slide-title"><h3>Flames of the Forgotten</h3><span aria-hidden="true">↗</span></div></a>
+      <a class="project-slide" href="./speak-up.html"><div class="slide-media speak-slide" aria-hidden="true"><span class="speak-slide-label">Communication, with confidence.</span><span class="speak-slide-word">Speak<em>Up.</em></span><span class="speak-slide-foot">Research-led app concept</span></div><p class="slide-category">UI/UX / Communication</p><div class="slide-title"><h3>SpeakUp</h3><span aria-hidden="true">↗</span></div></a>
+      <a class="project-slide" href="./explorations.html#intent" data-project="intent"><div class="slide-media"><img src="./assets/intent-cover.webp" alt="Concept illustration of the INTENT bicycle bell" width="1600" height="1100" loading="lazy"></div><p class="slide-category">Physical interaction / Concept</p><div class="slide-title"><h3>INTENT</h3><span aria-hidden="true">↗</span></div></a>
+      <a class="project-slide" href="./explorations.html#residual-signals" data-project="residual-signals"><div class="slide-media"><img src="./assets/residual-signals-cover.webp" alt="Concept illustration of an eye and layered screens for Residual Signals" width="1600" height="1100" loading="lazy"></div><p class="slide-category">Behaviour / Experiment</p><div class="slide-title"><h3>Residual Signals</h3><span aria-hidden="true">↗</span></div></a>
+    </div>
+  </section>
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+    <button class="project-dialog-close" type="button" id="project-dialog-close" aria-label="Close project">Close ×</button>
+    <img id="project-dialog-image" src="./assets/intent-cover.webp" alt="" width="1600" height="1100" loading="lazy">
+    <div class="project-dialog-copy"><h2 id="project-dialog-title">INTENT</h2><p id="project-dialog-description"></p></div>
+  </dialog>
+</main>
+<footer class="quiet-footer"><span>Nehal Thakkar</span><span>Interaction designer <span aria-hidden="true">/</span> © 2026</span></footer>
+<script src="./home.js" defer></script>
+<script src="./projects.js" defer></script>
+</body>
+</html>
