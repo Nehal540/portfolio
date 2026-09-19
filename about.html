@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#080808">
-  <title>About ,  Nehal Thakkar</title>
+  <title>About | Nehal Thakkar</title>
   <meta name="description" content="A brief introduction to Nehal, an interaction designer based in Ahmedabad.">
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,19 +12,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./theme.css">
   <link rel="stylesheet" href="./minimal.css">
-  <link rel="stylesheet" href="./about-gallery.css">
+  <link rel="stylesheet" href="./about-profile.css">
 </head>
 <body class="minimal-page about-page" id="top">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-nav" aria-label="Primary"><a class="nav-brand nav-annotation" href="./index.html" aria-label="Home">A work in progress</a><nav aria-label="Main navigation"><a href="./index.html">Home</a><a href="./work.html">Work</a><a href="./about.html" aria-current="page">About</a><a href="./contact.html">Contact</a></nav></header>
-<main id="main" class="personal-world">
-  <section class="personal-gallery" aria-label="Nehal’s personal photo gallery" aria-roledescription="carousel">
-    <div class="gallery-stage" id="about-gallery"></div>
-    <p class="gallery-line" id="gallery-line" aria-live="polite"></p>
-    <div class="gallery-controls"><button type="button" id="gallery-prev" aria-label="Previous photo">Previous</button><div id="gallery-dots" aria-label="Choose a photo"></div><button type="button" id="gallery-next" aria-label="Next photo">Next</button></div>
+<main id="main" class="about-profile">
+  <section class="about-grid" aria-labelledby="about-title">
+    <div class="about-portrait"><img src="./assets/about-reference.png" alt="Nehal Thakkar standing beside an orange architectural wall" width="1018" height="608"></div>
+    <div class="about-copy">
+      <h1 id="about-title">A little <em>about me.</em></h1>
+      <p>Hi, I’m Nehal Thakkar, an interaction designer curious about creating screens and experiences that make technology feel intuitive, playful, and human.</p>
+      <p>Outside work mode, you’ll usually find me lost in a book, exploring a game, or heading out on a trek. Books are my escape into some other world, while games have kept me curious since ninth grade about worlds I can actually take part in. Sometimes, I like to swap the screen for a trail and let curiosity pick the route in ways of exploring that shape how I see and design.</p>
+      <section class="about-tools" aria-labelledby="tools-title">
+        <h2 id="tools-title">Tools</h2>
+        <ul class="tool-list">
+          <li><span class="tool-icon tool-figma" aria-hidden="true"></span><span>Figma</span></li>
+          <li><span class="tool-icon tool-photoshop" aria-hidden="true"></span><span>Photoshop</span></li>
+          <li><span class="tool-icon tool-illustrator" aria-hidden="true"></span><span>Illustrator</span></li>
+          <li><span class="tool-icon tool-aftereffects" aria-hidden="true"></span><span>After Effects</span></li>
+          <li><span class="tool-icon tool-blender" aria-hidden="true"></span><span>Blender</span></li>
+          <li><span class="tool-icon tool-unity" aria-hidden="true"></span><span>Unity</span></li>
+        </ul>
+      </section>
+    </div>
   </section>
+  <div class="about-resume"><a href="./assets/Nehal_Thakkar_Resume.pdf" target="_blank" rel="noopener" aria-label="View my resume, PDF opens in a new tab">View my resume</a></div>
 </main>
 <footer class="quiet-footer"><span>Nehal Thakkar</span><span>Interaction designer <span aria-hidden="true">/</span> © 2026</span></footer>
-<script src="./about-gallery.js"></script>
 </body>
 </html>

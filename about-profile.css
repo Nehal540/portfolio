@@ -1,0 +1,18 @@
+.about-profile{width:min(1000px,calc(100% - 80px));margin:0 auto;padding:44px 0 24px}
+.about-grid{display:grid;grid-template-columns:282fr 424fr;gap:clamp(32px,4vw,54px);align-items:start}
+.about-portrait{position:relative;aspect-ratio:282/377;overflow:hidden;border-radius:5px;background:#27221d}
+.about-portrait img{position:absolute;width:360.993%;max-width:none;height:auto;left:-43.617%;top:-23.077%}
+.about-copy h1{font:400 clamp(2.75rem,4.4vw,4rem)/1.08 var(--serif);letter-spacing:-.045em;margin:0 0 25px}
+.about-copy p{font-size:clamp(.9375rem,1.25vw,1.125rem);line-height:1.65;color:#eeeae4}
+.about-copy p+p{margin-top:18px;color:#bcbcb8}
+.about-tools{margin-top:28px;padding-top:20px;border-top:1px solid #282825}
+.about-tools h2{font:500 .9375rem/1.4 var(--sans);margin:0 0 12px}
+.tool-list{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding:0;margin:0;list-style:none;max-width:480px}
+.tool-list li{display:flex;flex-direction:column;align-items:center;gap:8px;color:#bcbcb8;font-size:.625rem;text-align:center}
+.tool-icon{display:block;width:36px;height:36px;background-image:url('./assets/about-reference.png');background-repeat:no-repeat;background-size:1018px 608px}
+.tool-figma{background-position:-452px -413px}.tool-photoshop{background-position:-513px -413px}.tool-illustrator{background-position:-574px -413px}.tool-aftereffects{background-position:-634px -413px}.tool-blender{background-position:-695px -413px}.tool-unity{background-position:-756px -413px}
+.about-resume{display:flex;justify-content:flex-end;margin-top:32px;padding-top:20px;border-top:1px solid #282825}
+.about-resume a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border:1px solid #55554f;border-radius:999px;color:#d6d6ce;text-decoration:none;font-size:.8125rem;transition:color .2s,border-color .2s,background .2s}
+.about-resume a:hover,.about-resume a:focus-visible{color:#fff;background:#bb2020;border-color:#ff3b3b}
+@media(max-width:700px){.about-profile{width:calc(100% - 40px);padding-top:28px}.about-grid{grid-template-columns:1fr;gap:32px}.about-portrait{width:min(100%,360px)}.about-copy h1{font-size:3.25rem}.about-copy p{font-size:1rem}.tool-list{max-width:430px}.about-resume{margin-top:28px}}
+@media(prefers-reduced-motion:reduce){.about-resume a{transition:none}}
