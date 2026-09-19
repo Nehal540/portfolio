@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Study Image Path Test</title>
+  <style>
+    :root { font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f4ee; color: #141414; }
+    body { margin: 0; padding: 32px; }
+    h1 { margin: 0 0 8px; font-size: 42px; letter-spacing: -.05em; }
+    p { color: #6e6a62; max-width: 760px; line-height: 1.5; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 28px; }
+    figure { margin: 0; background: #fff; border: 1px solid rgba(20,20,20,.14); padding: 12px; }
+    .status { font-size: 12px; margin-bottom: 10px; }
+    .ok { color: #1f6b3a; }
+    .fail { color: #b42318; }
+    img { width: 100%; min-height: 180px; object-fit: contain; background: #f0eee7; display: block; }
+    figcaption { padding-top: 10px; font-size: 13px; }
+    code { font-size: 11px; word-break: break-all; color: #6e6a62; }
+  </style>
+</head>
+<body>
+  <h1>Case study image test</h1>
+  <p>This checks the 12 remote image paths used by the current case-study component. A green result means the URL loads in the browser. A red result means the old remote asset is not reachable and the Framer Image controls in <strong>CaseStudies_Image_Fix.tsx</strong> should be used instead.</p>
+  <div id="grid" class="grid"></div>
+  <script>
+    const SITE = "https://nehal-thakkar-ixd.nt560.chatgpt.site/assets/cases/";
+    const files = [
+      ["Speak Up / Home", "speak-home.png"],
+      ["Speak Up / Arena", "speak-arena.png"],
+      ["Speak Up / Warm-up", "speak-warmup.png"],
+      ["Speak Up / Coach", "speak-coach.png"],
+      ["Skill Bazaar / Discovery", "skill-discovery.jpg"],
+      ["Skill Bazaar / Teachers", "skill-teachers.jpg"],
+      ["Flames / Early scene", "flames-early.png"],
+      ["Flames / Development", "flames-development.png"],
+      ["Flames / Fire", "flames-fire.png"],
+      ["Flames / Night", "flames-night.png"],
+      ["Health / Welcome", "health-welcome.jpg"],
+      ["Health / Menu", "health-menu.jpg"],
+    ];
+
+    const grid = document.getElementById("grid");
+    for (const [label, file] of files) {
+      const figure = document.createElement("figure");
+      const status = document.createElement("div");
+      status.className = "status";
+      status.textContent = "Checking…";
+      const img = document.createElement("img");
+      img.alt = label;
+      img.src = SITE + file;
+      const caption = document.createElement("figcaption");
+      caption.innerHTML = `<strong>${label}</strong><br><code>${img.src}</code>`;
+
+      img.onload = () => {
+        status.className = "status ok";
+        status.textContent = "Loads correctly";
+      };
+      img.onerror = () => {
+        status.className = "status fail";
+        status.textContent = "Does not load from this remote path";
+      };
+
+      figure.append(status, img, caption);
+      grid.appendChild(figure);
+    }
+  </script>
+</body>
+</html>
